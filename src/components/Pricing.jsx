@@ -139,21 +139,22 @@ const Pricing = () => {
                                 ))}
                             </ul>
 
-                            <Button
-                                label="Get Started"
-                                icon="pi pi-bolt"
-                                style={{
-                                    width: '100%',
-                                    padding: '14px',
-                                    borderRadius: '16px',
-                                    background: p.popular ? 'white' : 'var(--primary-gradient)',
-                                    border: 'none',
-                                    color: p.popular ? 'var(--surface-900)' : 'white',
-                                    fontSize: '1rem',
-                                    fontWeight: 700
-                                }}
-                                className="p-button-raised"
-                            />
+                   <Button
+    label="Get Started"
+    icon="pi pi-bolt"
+    onClick={() => window.location.href = "https://portal.aisbirnusantara.com/dashboard/ecommerce"}
+    style={{
+        width: '100%',
+        padding: '14px',
+        borderRadius: '16px',
+        background: p.popular ? 'white' : 'var(--primary-gradient)',
+        border: 'none',
+        color: p.popular ? 'var(--surface-900)' : 'white',
+        fontSize: '1rem',
+        fontWeight: 700
+    }}
+    className="p-button-raised"
+/>
                         </div>
                     ))}
                 </div>
